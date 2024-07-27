@@ -42,7 +42,7 @@ def ascii_code character
   if character.length != 1
     return 'Input Error'
   end
-  character.ordinal
+  character.ord
 end
 
 # method name: #pet_pun
