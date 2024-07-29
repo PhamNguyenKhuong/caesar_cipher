@@ -50,7 +50,6 @@ end
 # Once you find the error, fix it and get the test to pass
 
 def yell_greeting(string)
-  binding.pry
   name = string
   name = name.upcase
   debugger
