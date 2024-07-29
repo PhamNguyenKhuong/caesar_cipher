@@ -5,8 +5,6 @@
 # Try to see if you can work your way from the last line, the bottom of the stack
 # To the top, the first line, where the error occured, and ONLY THEN fix the error
 
-require 'pry-byebug'
-
 def decrement_smallest_value(nested_array)
   smallest_value = nested_array.flatten.max
   nested_array.each do |array|
@@ -52,8 +50,10 @@ end
 # Once you find the error, fix it and get the test to pass
 
 def yell_greeting(string)
+  binding.pry
   name = string
   name = name.upcase
+  debugger
   greeting = "WASSAP, #{name}!"
   greeting
 end
