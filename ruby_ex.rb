@@ -1,9 +1,8 @@
-require 'pry-byebug'
 
 def yell_greeting(string)
   name = string
 
-  binding.pry
+  debugger
 
   name = name.upcase
   greeting = "WASSAP, #{name}!"
